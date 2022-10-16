@@ -1,0 +1,73 @@
+
+.cards-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+@media (max-width: 1050px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 730px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    padding: 18px;
+    box-shadow: 0px 0px 10px 3px #eee;
+    border-radius: 20px;
+    height: 200px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px 3px rgb(223, 223, 223);
+}
+
+.card__name { 
+    margin-bottom: 36px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card__phone {
+    color: #929292;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.card__phone::before {
+    margin-right: 12px;
+    height: 20px;
+    width: 12px;
+    content: " ";
+    display: inline-block;
+    background-size: 12px 20px ;
+    background-image: url("../res/phone.png");
+}
+
+.card__email {
+    font-size: 12px;
+    color: #929292;
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.card__email::before {
+    margin-right: 12px;
+    height: 12px;
+    width: 16px;
+    content: " ";
+    display: inline-block;
+    background-size: 16px 12px ;
+    background-image: url("../res/email.png");
+}

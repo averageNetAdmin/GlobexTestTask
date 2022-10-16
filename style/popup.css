@@ -1,0 +1,76 @@
+.popup-card {
+    top: 100px;
+    max-width: 420px;
+    width: 100%;
+    position: relative;
+    background-color: #FFF;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.popup-card__close-img {
+    left: calc(50% - 18px);
+    top: -18px;
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    border-radius: 18px;
+}
+
+.popup-card__name {
+    margin-top: 12px;
+    margin-bottom: 40px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.popup-card__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: 0px;
+}
+
+.popup-card__grid * {
+    margin: 0px 0px 14px 0px;
+    display: block;
+    height: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
+
+.popup-card__title {
+    font-weight: 550;
+    font-size: 12px;
+}
+
+.popup-card__data { 
+    color: #929292;
+    font-size: 11px;
+    
+}
+
+.popup-card__phone { 
+    font-size: 12px;
+}
+
+.popup-card__info-title {
+    margin: 22px 0px 8px 0px;
+}
+
+.popup-card__info {
+    margin: 0px 0px 6px 0px;
+}
+
+.popup-background {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    top: 0px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #cdd6e383;
+}

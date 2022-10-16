@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('./style/search.css');
+@import url('./style/cards.css');
+@import url('./style/popup.css');
+
+body {
+    margin: 0px 0px 24px 0px;
+    font-family: Roboto, sans-serif;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.content { 
+    max-width: 1000px;
+    width: 80%;
+    margin: 0 auto;
+}
